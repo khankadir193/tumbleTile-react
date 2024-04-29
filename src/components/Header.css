@@ -9,3 +9,25 @@
     height: 100vh;
     background-size: cover;
 }
+
+
+.topElement-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    height: 10vh;
+}
+
+.topElement-container button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.topElement-container img {
+    /* max-width: 30%; */
+    width: 50%;
+    /* Adjust as needed */
+}
