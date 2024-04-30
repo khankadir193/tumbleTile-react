@@ -1,0 +1,25 @@
+.popup-content{
+    background-image: url('../images/Guide/popup-bg1.png');
+    /* background: url(../img/backgrounds/infobg.png) center/100% 100% no-repeat; */
+    /* background-size: 100% 100%; */
+    background-size: contain;
+    width: 88vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    /* top: 6rem; */
+}
+
+.popup-content button{
+    border: none;
+    outline: none;
+    background: none;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+}
+
+img{
+    width: 100%;
+}

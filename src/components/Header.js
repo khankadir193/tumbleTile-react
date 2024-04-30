@@ -26,7 +26,7 @@ const Header = () => {
         <Image src={myJumps} alt="myJumps" />
         <div className="leaderboardButton">
           <button id="leaderBoardButton">
-            <img src={leaderBoardButton} alt="myJumps" />
+            <Image src={leaderBoardButton} alt="myJumps" />
           </button>
         </div>
       </div>
