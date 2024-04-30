@@ -91,11 +91,11 @@
 }
 
 .event-details{
-    /* width: 80%; */
+    width: 80%;
     height: 32vh;
     position: relative;
-    bottom: 6rem;
-    /* top: 4rem; */
+    /* bottom: 6rem; */
+    top: 17rem;
 }
 
 img{

@@ -12,6 +12,8 @@ import display1 from '../images/Guide/display-1.png';
 import gameWorld from '../images/Guide/game-world.png';
 import partyBrust from '../images/Guide/party-brust.png';
 import display2 from '../images/Guide/display-2.png';
+import eventDetails from '../images/Guide/event-detail-bg.png';
+
 
 
 const Popup = ({ onClose }) => {
@@ -46,6 +48,9 @@ const Popup = ({ onClose }) => {
               <Image src={display2} alt="display2" />
             </div>
           </div>
+        </div>
+        <div class="event-details">
+          <Image src={eventDetails} alt="event-details" />
         </div>
       </div>
     </div>
