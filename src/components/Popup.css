@@ -2,15 +2,17 @@
     background-image: url('../images/Guide/popup-bg1.png');
     /* background: url(../img/backgrounds/infobg.png) center/100% 100% no-repeat; */
     /* background-size: 100% 100%; */
-    background-size: contain;
+    background-size: cover;
     width: 88vw;
     height: 100vh;
     margin: 0 auto;
     position: relative;
-    /* top: 6rem; */
+    background-repeat: no-repeat;
+    /* top: 1rem; */
+    bottom: 3.5rem;
 }
 
-.popup-content button{
+.popup button{
     border: none;
     outline: none;
     background: none;
@@ -31,6 +33,69 @@
     /* align-items: center; */
     /* top: 7rem; */
     /* left: 1rem; */
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    position: absolute;
+    top: 5rem;
+    left: -1rem;
+    gap: 3rem;
+    top: 3rem;
+}
+
+.event-gifts{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 4.5rem;
+    top: 3rem;
+}
+
+.event-gifts img{
+    width: 100%;
+}
+
+
+.first-display{
+    width: 100%;
+}
+
+.second-display{
+    width: 100%;
+    position: relative;
+    top: -3rem;
+}
+
+.treasure-warrior{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 6rem;
+    top: 1rem;
+    gap: 3rem;
+    /* margin: 0 auto; */
+}
+
+.game-party{
+    width: 30%;
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    top: 1rem;
+    left: 4rem;
+}
+
+.event-details{
+    /* width: 80%; */
+    height: 32vh;
+    position: relative;
+    bottom: 6rem;
+    /* top: 4rem; */
 }
 
 img{
