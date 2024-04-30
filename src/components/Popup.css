@@ -20,6 +20,19 @@
     top: 3rem;
 }
 
+.guide-character{
+    width: 70%;
+    height: 10vh;
+    position: relative;
+    /* bottom: 0; */
+    display: flex;
+    gap: 1rem;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* top: 7rem; */
+    /* left: 1rem; */
+}
+
 img{
     width: 100%;
 }
