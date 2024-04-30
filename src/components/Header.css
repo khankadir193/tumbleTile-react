@@ -31,3 +31,12 @@
     width: 50%;
     /* Adjust as needed */
 }
+
+.topElement-container span{
+    color: white;
+    /* font-size: ; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 8.5rem;
+    font-size: 11px;
+}
