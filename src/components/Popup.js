@@ -1,5 +1,5 @@
 // Popup.js
-import React from 'react';
+import React,{useState} from 'react';
 import './Popup.css';
 import Image from './Image';
 import closeBtn from '../images/Guide/close-button.png';
@@ -18,11 +18,22 @@ import Userselected from '../images/Leaderboard/Userselected-main.png';
 import UserUnselected from '../images/Leaderboard/Userunselected-main.png';
 import Talentselected from '../images/Leaderboard/Talentselected-main.png';
 import Talentunselected from '../images/Leaderboard/Talentunselected-main.png';
+import UserContent from './UserContent';
+import TalentContent from './TalentContent';
 
 // import { closeBtn, guideBanner, character, eventGifts, treasureBox, warrior, display1, gameWorld, partyBrust, display2, eventDetails } from '../images/Guide';
 
 
 const Popup = ({ onClose, popupProps }) => {
+
+  const [selectedTab, setSelectedTab] = useState('user');
+
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+  };
+
+
+
   return (
     <div className="popup">
       {/* guide popup design */}
@@ -71,15 +82,18 @@ const Popup = ({ onClose, popupProps }) => {
               <Image src={leaderboardBanner} alt="guideBanner" />
             </div>
             <div className="popup-content">
-              <div class="user-talent-btn" >
-                <button>
-                  <Image src={Userselected} alt="game-world" />
+              <div className="user-talent-btn">
+                <button onClick={() => handleTabChange('user')}>
+                  <Image src={selectedTab === 'user' ? Userselected : Talentunselected} alt="user-talent" />
                 </button>
-                <button>
-                  <Image src={Talentunselected} alt="game-world" />
+                <button onClick={() => handleTabChange('talent')}>
+                  <Image src={selectedTab === 'talent' ? Talentunselected : Userselected} alt="user-talent" />
                 </button>
               </div>
-
+              <div className="content-container">
+                {selectedTab === 'user' && <UserContent />}
+                {selectedTab === 'talent' && <TalentContent />}
+              </div>
             </div>
           </div>)
       }
