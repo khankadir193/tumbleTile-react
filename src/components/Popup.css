@@ -4,7 +4,7 @@
     /* background-size: 100% 100%; */
     background-size: cover;
     width: 88vw;
-    height: 60vh;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     top: 5rem;
     left: -1rem;
     gap: 3rem;
-    top: 3rem;
+    /* top: 3rem; */
 }
 
 .event-gifts{
@@ -95,11 +95,11 @@
 }
 
 .event-details{
-    width: 80%;
-    height: 32vh;
+    width: 83vw;
+    /* height: 32vh; */
     position: relative;
     /* bottom: 6rem; */
-    /* top: 17rem; */
+    top: 19rem;
 }
 
 img{
