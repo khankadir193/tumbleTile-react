@@ -47,7 +47,7 @@
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    top: 5.5rem;
+    top: 5rem;
     /* padding-inline: 2vw; */
 }
 
@@ -55,5 +55,21 @@
     width: 15%;
     /* position: relative; */
     top: 7rem;
+    /* margin: 0 auto; */
+}
+
+.character-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 8rem;
+    height: 14vh;
+    /* padding-inline: 4vw; */
+}
+
+.character-container img{
+    width: 15%;
     /* margin: 0 auto; */
 }
