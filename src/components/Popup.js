@@ -14,42 +14,53 @@ import partyBrust from '../images/Guide/party-brust.png';
 import display2 from '../images/Guide/display-2.png';
 import eventDetails from '../images/Guide/event-detail-bg.png';
 
-const Popup = ({ onClose }) => {
+const Popup = ({ onClose,popupProps }) => {
   return (
     <div className="popup">
-      <button onClick={onClose}>
-        <Image src={closeBtn} alt="close button" />
-      </button>
-      <div className="guide-character">
-        <Image src={guideBanner} alt="guideBanner" />
-        <Image src={character} alt="characterRight" />
-      </div>
-      <div className="popup-content">
-        <div className="guide">
-          <div className="event-gifts">
-            <Image src={eventGifts} alt="event-gifts" />
+      {/* guide popup design */}
+      {popupProps === "Guide" && <div>
+        <button onClick={onClose}>
+          <Image src={closeBtn} alt="close button" />
+        </button>
+        <div className="guide-character">
+          <Image src={guideBanner} alt="guideBanner" />
+          <Image src={character} alt="characterRight" />
+        </div>
+        <div className="popup-content">
+          <div className="guide">
+            <div className="event-gifts">
+              <Image src={eventGifts} alt="event-gifts" />
+            </div>
+            <div className="display">
+              <div className="first-display">
+                <div className="treasure-warrior">
+                  <Image src={treasureBox} alt="treasureBox" />
+                  <Image src={warrior} alt="warrior" />
+                </div>
+                <Image src={display1} alt="display1" />
+              </div>
+              <div className="second-display">
+                <div className="game-party">
+                  <Image src={gameWorld} alt="game-world" />
+                  <Image src={partyBrust} alt="partyBrust" />
+                </div>
+                <Image src={display2} alt="display2" />
+              </div>
+            </div>
           </div>
-          <div className="display">
-            <div className="first-display">
-              <div className="treasure-warrior">
-                <Image src={treasureBox} alt="treasureBox" />
-                <Image src={warrior} alt="warrior" />
-              </div>
-              <Image src={display1} alt="display1" />
-            </div>
-            <div className="second-display">
-              <div className="game-party">
-                <Image src={gameWorld} alt="game-world" />
-                <Image src={partyBrust} alt="partyBrust" />
-              </div>
-              <Image src={display2} alt="display2" />
-            </div>
+          <div className="event-details">
+            <Image src={eventDetails} alt="event-details" />
           </div>
         </div>
-        <div className="event-details">
-          <Image src={eventDetails} alt="event-details" />
-        </div>
-      </div>
+      </div>}
+      {
+        popupProps === "leaderBoard" && (<div> 
+          
+       <h1>Hi this is the leaderboard popup</h1>   
+          
+           </div>)
+      }
+
     </div>
   );
 };
