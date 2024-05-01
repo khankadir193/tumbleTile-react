@@ -8,4 +8,4 @@ const TalentContent = () => {
   )
 }
 
-export default TalentContent
+export default TalentContent;

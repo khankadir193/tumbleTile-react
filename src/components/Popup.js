@@ -84,10 +84,10 @@ const Popup = ({ onClose, popupProps }) => {
             <div className="popup-content">
               <div className="user-talent-btn">
                 <button onClick={() => handleTabChange('user')}>
-                  <Image src={selectedTab === 'user' ? Userselected : Talentunselected} alt="user-talent" />
+                  <Image src={selectedTab === 'user' ? Userselected : UserUnselected} alt="user-talent" />
                 </button>
                 <button onClick={() => handleTabChange('talent')}>
-                  <Image src={selectedTab === 'talent' ? Talentunselected : Userselected} alt="user-talent" />
+                  <Image src={selectedTab === 'talent' ? Talentselected : Talentunselected} alt="user-talent" />
                 </button>
               </div>
               <div className="content-container">

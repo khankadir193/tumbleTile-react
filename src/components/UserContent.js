@@ -8,4 +8,4 @@ const UserContent = () => {
   )
 }
 
-export default UserContent
+export default UserContent;
