@@ -4,7 +4,7 @@
     /* background-size: 100% 100%; */
     background-size: cover;
     width: 88vw;
-    height: 100vh;
+    height: 100vh; /* because thi scroll issue is occur.  */
     margin: 0 auto;
     position: relative;
     background-repeat: no-repeat;

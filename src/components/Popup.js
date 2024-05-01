@@ -1,6 +1,6 @@
 // Popup.js
 import React from 'react';
-import './Popup.css'
+import './Popup.css';
 import Image from './Image';
 import closeBtn from '../images/Guide/close-button.png';
 import guideBanner from '../images/Guide/Guide-banner.png';
@@ -14,34 +14,31 @@ import partyBrust from '../images/Guide/party-brust.png';
 import display2 from '../images/Guide/display-2.png';
 import eventDetails from '../images/Guide/event-detail-bg.png';
 
-
-
 const Popup = ({ onClose }) => {
   return (
     <div className="popup">
       <button onClick={onClose}>
         <Image src={closeBtn} alt="close button" />
       </button>
-      <div class="guide-character">
+      <div className="guide-character">
         <Image src={guideBanner} alt="guideBanner" />
         <Image src={character} alt="characterRight" />
       </div>
       <div className="popup-content">
-        {/* guide content goes here */}
-        <div class="guide">
-          <div class="event-gifts">
+        <div className="guide">
+          <div className="event-gifts">
             <Image src={eventGifts} alt="event-gifts" />
           </div>
-          <div class="display">
-            <div class="first-display">
-              <div class="treasure-warrior">
-                <Image src={treasureBox} alt="warrior" />
+          <div className="display">
+            <div className="first-display">
+              <div className="treasure-warrior">
+                <Image src={treasureBox} alt="treasureBox" />
                 <Image src={warrior} alt="warrior" />
               </div>
-              <Image src={display1} alt="guideBanner" />
+              <Image src={display1} alt="display1" />
             </div>
-            <div class="second-display">
-              <div class="game-party">
+            <div className="second-display">
+              <div className="game-party">
                 <Image src={gameWorld} alt="game-world" />
                 <Image src={partyBrust} alt="partyBrust" />
               </div>
@@ -49,7 +46,7 @@ const Popup = ({ onClose }) => {
             </div>
           </div>
         </div>
-        <div class="event-details">
+        <div className="event-details">
           <Image src={eventDetails} alt="event-details" />
         </div>
       </div>
