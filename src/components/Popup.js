@@ -49,9 +49,9 @@ const Popup = ({ onClose }) => {
             </div>
           </div>
         </div>
-        <div class="event-details">
+        {/* <div class="event-details">
           <Image src={eventDetails} alt="event-details" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
