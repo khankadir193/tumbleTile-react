@@ -4,6 +4,8 @@ import Image from './Image';
 import guideButton from '../images/Guide/Guide-button.png';
 import myJumps from '../images/Header/myJumps.png';
 import leaderBoardButton from '../images/Leaderboard/leaderboard-button.png';
+import rewardHistory from '../images/Header/reward-history-icon.gif';
+import titlePosition  from '../images/Header/tile-Position-icon.png';
 import Popup from './Popup';
 
 const Header = () => {
@@ -39,6 +41,11 @@ const Header = () => {
       </div>
 
       {showPopup && <Popup onClose={togglePopup} popupProps={popupContent} />}
+
+      <div class="reward-tile-container">
+            <Image src={titlePosition} alt="rewardHistory" />
+            <Image src={rewardHistory} alt="tilepositionIcon" />
+      </div>
     </div>
   );
 }
