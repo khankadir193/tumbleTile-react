@@ -105,3 +105,33 @@
 img{
     width: 100%;
 }
+.leaderboard-banner{
+    width: 70%;
+    height: 10vh;
+    position: relative;
+    bottom: 17vw;
+    display: flex;
+    z-index: 1;
+    left: 3rem;
+}
+
+.user-talent-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+    width: 120%;
+    gap: 3vw;
+    right: 10rem;
+}
+
+.user-talent-btn button{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.user-talent-btn img{
+    width: 100%;
+}

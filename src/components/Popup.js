@@ -13,8 +13,16 @@ import gameWorld from '../images/Guide/game-world.png';
 import partyBrust from '../images/Guide/party-brust.png';
 import display2 from '../images/Guide/display-2.png';
 import eventDetails from '../images/Guide/event-detail-bg.png';
+import leaderboardBanner from '../images/Leaderboard/leaderboard-banner.png';
+import Userselected from '../images/Leaderboard/Userselected-main.png';
+import UserUnselected from '../images/Leaderboard/Userunselected-main.png';
+import Talentselected from '../images/Leaderboard/Talentselected-main.png';
+import Talentunselected from '../images/Leaderboard/Talentunselected-main.png';
 
-const Popup = ({ onClose,popupProps }) => {
+// import { closeBtn, guideBanner, character, eventGifts, treasureBox, warrior, display1, gameWorld, partyBrust, display2, eventDetails } from '../images/Guide';
+
+
+const Popup = ({ onClose, popupProps }) => {
   return (
     <div className="popup">
       {/* guide popup design */}
@@ -54,11 +62,26 @@ const Popup = ({ onClose,popupProps }) => {
         </div>
       </div>}
       {
-        popupProps === "leaderBoard" && (<div> 
-          
-       <h1>Hi this is the leaderboard popup</h1>   
-          
-           </div>)
+        popupProps === "leaderBoard" && (
+          <div>
+            <button onClick={onClose}>
+              <Image src={closeBtn} alt="close button" />
+            </button>
+            <div className="leaderboard-banner">
+              <Image src={leaderboardBanner} alt="guideBanner" />
+            </div>
+            <div className="popup-content">
+              <div class="user-talent-btn" >
+                <button>
+                  <Image src={Userselected} alt="game-world" />
+                </button>
+                <button>
+                  <Image src={Talentunselected} alt="game-world" />
+                </button>
+              </div>
+
+            </div>
+          </div>)
       }
 
     </div>
