@@ -14,3 +14,18 @@
     z-index: 2;
     margin: 0 auto;
 }
+
+.reward-hourly-daily-overallBtn{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -.3rem;
+    /* z-index: 2; */
+}
+
+.reward-hourly-daily-overallBtn button{
+    border: none;
+    outline: none;
+    background: none;
+}
