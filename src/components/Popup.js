@@ -38,7 +38,7 @@ const Popup = ({ onClose, popupProps }) => {
     <div className="popup">
       {/* guide popup design */}
       {popupProps === "Guide" && <div>
-        <button onClick={onClose}>
+        <button className='guideCloseBtn' onClick={onClose}>
           <Image src={closeBtn} alt="close button" />
         </button>
         <div className="guide-character">
@@ -75,13 +75,13 @@ const Popup = ({ onClose, popupProps }) => {
       {
         popupProps === "leaderBoard" && (
           <div>
-            <button onClick={onClose}>
+            <button className='closeBtn' onClick={onClose}>
               <Image src={closeBtn} alt="close button" />
             </button>
             <div className="leaderboard-banner">
               <Image src={leaderboardBanner} alt="guideBanner" />
             </div>
-            <div className="popup-content">
+            <div className="leaderboard-content">
               <div className="user-talent-btn">
                 <button onClick={() => handleTabChange('user')}>
                   <Image src={selectedTab === 'user' ? Userselected : UserUnselected} alt="user-talent" />

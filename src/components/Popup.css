@@ -11,18 +11,46 @@
     /* top: 1rem; */
     bottom: 7.5rem;
     overflow: hidden;
+    z-index: 1;
 }
 
-.popup button{
+.leaderboard-content{
+    background-image: url('../images/Guide/popup-bg1.png');
+    /* background: url(../img/backgrounds/infobg.png) center/100% 100% no-repeat; */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    width: 88vw;
+    height: 100vh; /* because thi scroll issue is occur.  */
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+    /* top: 1rem; */
+    bottom: 5.5rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.guideCloseBtn{
     border: none;
     outline: none;
     background: none;
     width: 15%;
     position: relative;
-    /* right: 0; */
     top: 2rem;
-    z-index: 1;
+    z-index: 2;
     left: 8rem;
+}
+
+.closeBtn{
+    border: none;
+    outline: none;
+    background: none;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    /* top: 7rem; */
+    z-index: 2;
+    /* left: 3rem; */
 }
 
 .guide-character{
@@ -120,10 +148,11 @@ img{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 4rem;
-    width: 120%;
-    gap: 3vw;
-    right: 10rem;
+    top: 6rem;
+    width: 50%;
+    left: 4rem;
+    /* gap: 3vw; */
+    /* right: 10rem; */
 }
 
 .user-talent-btn button{
