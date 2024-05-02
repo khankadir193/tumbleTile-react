@@ -109,6 +109,21 @@
     margin: 0px 43px;
 }
 
+.fourth-tile{
+    display: flex;
+    position: absolute;
+    bottom: 67vw;
+    width: 65%;
+    margin: 0px 54px;
+}
+
+.fifth-tile{
+    display: flex;
+    position: absolute;
+    bottom: 77vw;
+    width: 60%;
+    margin: 0px 65px;
+}
 
 button{
     background: none;

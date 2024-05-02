@@ -14,6 +14,10 @@ import secondTileLeft from '../images/Header/Unselected/2-left.png';
 import secondTileRight from '../images/Header/Unselected/2-right.png';
 import thirdTileLeft from '../images/Header/Unselected/3-left.png';
 import thirdTileRight from '../images/Header/Unselected/3-right.png';
+import fourthTileLeft from '../images/Header/Unselected/4-left.png';
+import fourthTileRight from '../images/Header/Unselected/4-right.png';
+import fifthTileLeft from '../images/Header/Unselected/5-left.png';
+import fifthTileRight from '../images/Header/Unselected/5-right.png';
 import Popup from './Popup';
 
 const Header = () => {
@@ -87,6 +91,26 @@ const Header = () => {
 
           <button>
             <Image src={thirdTileRight} alt="thirdTile" />
+          </button>
+        </div>
+
+        <div className='fourth-tile'>
+          <button>
+            <Image src={fourthTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={fourthTileRight} alt="thirdTile" />
+          </button>
+        </div>
+
+        <div className='fifth-tile'>
+          <button>
+            <Image src={fifthTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={fifthTileRight} alt="thirdTile" />
           </button>
         </div>
 
