@@ -1,0 +1,16 @@
+.reward-container{
+    background-image: url('../images/Leaderboard/reward-bg.png');
+    /* background: url(../img/backgrounds/infobg.png) center/100% 100% no-repeat; */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    width: 70vw;
+    height: 20vh; /* because thi scroll issue is occur.  */
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+    top: 1rem;
+    /* bottom: 7.5rem; */
+    overflow: hidden;
+    z-index: 2;
+    margin: 0 auto;
+}
