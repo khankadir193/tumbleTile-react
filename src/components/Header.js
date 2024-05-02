@@ -8,6 +8,10 @@ import rewardHistory from '../images/Header/reward-history-icon.gif';
 import titlePosition from '../images/Header/tile-Position-icon.png';
 import characterLeft from '../images/Header/charcter-left.gif';
 import characterRight from '../images/Header/charcter-right.gif';
+import firstTileLeft from '../images/Header/Unselected/1-left.png';
+import firstTileRight from '../images/Header/Unselected/1-right.png';
+import secondTileLeft from '../images/Header/Unselected/2-left.png';
+import secondTileRight from '../images/Header/Unselected/2-right.png';
 import Popup from './Popup';
 
 const Header = () => {
@@ -52,6 +56,28 @@ const Header = () => {
       <div class="character-container">
         <Image src={characterLeft} alt="rewardHistory" />
         <Image src={characterRight} alt="tilepositionIcon" />
+      </div>
+
+      <div className='tile-container'>
+        <div className='first-tile'>
+          <button>
+            <Image src={firstTileLeft} alt="firstTile" />
+          </button>
+
+          <button>
+            <Image src={firstTileRight} alt="secondTile" />
+          </button>
+        </div>
+        <div className='second-tile'>
+          <button>
+            <Image src={secondTileLeft} alt="firstTile" />
+          </button>
+
+          <button>
+            <Image src={secondTileRight} alt="secondTile" />
+          </button>
+        </div>
+
       </div>
     </div>
   );

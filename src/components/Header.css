@@ -73,3 +73,35 @@
     width: 15%;
     /* margin: 0 auto; */
 }
+
+/* tile container */
+.tile-container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    /* flex-direction: ; */
+}
+
+.first-tile{
+    display: flex;
+    position: absolute;
+    bottom: 24vw;
+}
+
+.second-tile{
+    display: flex;
+    position: absolute;
+    bottom: 43vw;
+    display: flex;
+    position: absolute;
+    bottom: 43vw;
+    width: 80%;
+    margin: 0px 31px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+}
