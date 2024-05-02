@@ -12,6 +12,8 @@ import firstTileLeft from '../images/Header/Unselected/1-left.png';
 import firstTileRight from '../images/Header/Unselected/1-right.png';
 import secondTileLeft from '../images/Header/Unselected/2-left.png';
 import secondTileRight from '../images/Header/Unselected/2-right.png';
+import thirdTileLeft from '../images/Header/Unselected/3-left.png';
+import thirdTileRight from '../images/Header/Unselected/3-right.png';
 import Popup from './Popup';
 
 const Header = () => {
@@ -70,11 +72,21 @@ const Header = () => {
         </div>
         <div className='second-tile'>
           <button>
-            <Image src={secondTileLeft} alt="firstTile" />
+            <Image src={secondTileLeft} alt="secondTile" />
           </button>
 
           <button>
             <Image src={secondTileRight} alt="secondTile" />
+          </button>
+        </div>
+
+        <div className='third-tile'>
+          <button>
+            <Image src={thirdTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={thirdTileRight} alt="thirdTile" />
           </button>
         </div>
 

@@ -101,6 +101,15 @@
     align-items: center;
 }
 
+.third-tile{
+    display: flex;
+    position: absolute;
+    bottom: 56vw;
+    width: 70%;
+    margin: 0px 43px;
+}
+
+
 button{
     background: none;
     border: none;
