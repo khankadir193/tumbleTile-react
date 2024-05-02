@@ -29,3 +29,20 @@
     outline: none;
     background: none;
 }
+
+.left-right-arrow{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    gap: 10rem;
+}
+
+.left-right-arrow button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
