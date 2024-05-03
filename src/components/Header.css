@@ -125,6 +125,30 @@
     margin: 0px 65px;
 }
 
+.six-tile{
+    display: flex;
+    position: absolute;
+    bottom: 86vw;
+    width: 55%;
+    margin: 0px 72px;
+}
+
+.seven-tile{
+    display: flex;
+    position: absolute;
+    bottom: 94vw;
+    width: 48%;
+    margin: 0px 82px;
+}
+
+.eight-tile{
+    display: flex;
+    position: absolute;
+    bottom: 101vw;
+    width: 35%;
+    margin: 0px 104px;
+}
+
 button{
     background: none;
     border: none;

@@ -18,6 +18,12 @@ import fourthTileLeft from '../images/Header/Unselected/4-left.png';
 import fourthTileRight from '../images/Header/Unselected/4-right.png';
 import fifthTileLeft from '../images/Header/Unselected/5-left.png';
 import fifthTileRight from '../images/Header/Unselected/5-right.png';
+import sixTileLeft from '../images/Header/Unselected/6-left.png';
+import sixTileRight from '../images/Header/Unselected/6-right.png';
+import sevenTileLeft from '../images/Header/Unselected/7-left.png';
+import sevenTileRight from '../images/Header/Unselected/7-right.png';
+import eightTileLeft from '../images/Header/Unselected/8-left.png';
+import eightTileRight from '../images/Header/Unselected/8-right.png';
 import Popup from './Popup';
 
 const Header = () => {
@@ -111,6 +117,36 @@ const Header = () => {
 
           <button>
             <Image src={fifthTileRight} alt="thirdTile" />
+          </button>
+        </div>
+
+        <div className='six-tile'>
+          <button>
+            <Image src={sixTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={sixTileRight} alt="thirdTile" />
+          </button>
+        </div>
+
+        <div className='seven-tile'>
+          <button>
+            <Image src={sevenTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={sevenTileRight} alt="thirdTile" />
+          </button>
+        </div>
+
+        <div className='eight-tile'>
+          <button>
+            <Image src={eightTileLeft} alt="thirdTile" />
+          </button>
+
+          <button>
+            <Image src={eightTileRight} alt="thirdTile" />
           </button>
         </div>
 
