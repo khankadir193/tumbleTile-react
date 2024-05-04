@@ -18,6 +18,7 @@
     position: absolute;
     top: 2rem;
     height: 10vh;
+    z-index: 1;
 }
 
 .topElement-container button{
