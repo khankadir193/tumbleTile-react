@@ -6,8 +6,8 @@ const DailyComponent = () => {
   console.log('dailyComponent...?????????');
   return (
     <div className='daily-container'>
-          DailyComponent
-      {/* <CarouselComp /> */}
+          {/* DailyComponent */}
+      <CarouselComp />
     </div>
   )
 }
