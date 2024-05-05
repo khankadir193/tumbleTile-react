@@ -47,10 +47,8 @@ const RewardComponent = () => {
                 {selectedTab === 'daily' && <DailyComponent />}
                 {selectedTab === 'overall' && <OverAllComponent />}
             </div>
-
-            <LeaderBoard />
         </div>
     );
 }
 
-export default RewardComponent
+export default RewardComponent;

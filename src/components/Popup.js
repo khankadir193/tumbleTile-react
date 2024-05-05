@@ -21,6 +21,7 @@ import Talentunselected from '../images/Leaderboard/Talentunselected-main.png';
 import UserContent from './UserContent';
 import TalentContent from './TalentContent';
 import RewardComponent from './RewardComponent';
+import LeaderBoard from '../LeaderBoard/LeaderBoard';
 // import { closeBtn, guideBanner, character, eventGifts, treasureBox, warrior, display1, gameWorld, partyBrust, display2, eventDetails } from '../images/Guide';
 
 
@@ -95,6 +96,7 @@ const Popup = ({ onClose, popupProps }) => {
                 {selectedTab === 'user' && <RewardComponent />}
                 {selectedTab === 'talent' && <TalentContent />}
               </div>
+              <LeaderBoard />
             </div>
           </div>)
       }
