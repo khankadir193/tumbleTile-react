@@ -11,6 +11,7 @@ import leftArrow from '../images/Leaderboard/Left-arrow.png';
 import rightArrow from '../images/Leaderboard/Right-arrow.png';
 import DailyComponent from './DailyComponent';
 import OverAllComponent from './OverAllComponent';
+import LeaderBoard from '../LeaderBoard/LeaderBoard';
 
 
 const RewardComponent = () => {
@@ -46,6 +47,8 @@ const RewardComponent = () => {
                 {selectedTab === 'daily' && <DailyComponent />}
                 {selectedTab === 'overall' && <OverAllComponent />}
             </div>
+
+            <LeaderBoard />
         </div>
     );
 }
