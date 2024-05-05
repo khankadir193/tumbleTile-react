@@ -8,6 +8,10 @@ import overAllUnselected from '../images/Leaderboard/Overall-unselected.png';
 import hourlyUnselected from '../images/Leaderboard/Hourly-unselected.png';
 import dailySelected from '../images/Leaderboard/Daily-selected.png';
 import overAllSelected from '../images/Leaderboard/Overall-selected.png';
+import DailyComp from './DailyComp.js';
+import HourlyComp from './HourlyComp.js';
+import OverAllComp from './OverAllComp.js';
+
 
 
 
@@ -31,6 +35,12 @@ const LeaderBoard = () => {
                 <button onClick={() => handleTabChange('overall')}>
                     <Image src={selectedTab === 'overall' ? overAllSelected : overAllUnselected} alt="user-talent" />
                 </button>
+            </div>
+
+            <div className="hourly-daily-overall-container">
+                {selectedTab === 'hourly' && <HourlyComp />}
+                {selectedTab === 'daily' && <DailyComp />}
+                {selectedTab === 'overall' && <OverAllComp />}
             </div>
         </div>
     )
