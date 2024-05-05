@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import '../Style/Daily.css';
+import CarouselComp from '../crousel/CarouselComp';
 
 const DailyComponent = () => {
+  console.log('dailyComponent...?????????');
   return (
-    <div>DailyComponent</div>
+    <div className='daily-container'>
+          DailyComponent
+      {/* <CarouselComp /> */}
+    </div>
   )
 }
 
-export default DailyComponent
+export default DailyComponent;

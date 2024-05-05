@@ -31,17 +31,17 @@ const RewardComponent = () => {
                     <Image src={selectedTab === 'overall' ? overAllSelected : overAllUnSelected} alt="user-talent" />
                 </button>
             </div>
-            <div className='left-right-arrow'>
+            {/* <div className='left-right-arrow'>
                 <button>
                     <Image src={leftArrow} alt="leftArrow" />
                 </button>
                 <button>
                     <Image src={rightArrow} alt="rightArrow" />
                 </button>
-            </div>
+            </div> */}
 
 
-            <div className="content-container">
+            <div className="daily-overall-container">
                 {/* {selectedTab === 'user' && <UserContent />} */}
                 {selectedTab === 'daily' && <DailyComponent />}
                 {selectedTab === 'overall' && <OverAllComponent />}
