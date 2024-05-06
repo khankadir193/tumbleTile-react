@@ -7,12 +7,13 @@ import seelessbtn from "../images/Leaderboard/see-less-btn.png";
 import TopRank from "./TopRank.js";
 import { getLevelUrl } from "../UtilityFunction/helper.js";
 import RestRank from "./RestRank";
+import '../Style/OverAllComp.css';
 
 // import unknown from "../../assests/unknown.png";
 
 
 
-const OverAll = (talent,estReward,prev) => {
+const OverAll = ({talent,estReward,prev,data}) => {
   console.log('overall Leaderboard component');
   const [dataLength, setDataLength] = useState(10);
   const changeSeeBtn = () => {
@@ -23,9 +24,9 @@ const OverAll = (talent,estReward,prev) => {
     }
   };
   const [leaderboardInfo, setLeaderboardInfo] = useState(null);
-  let topData = leaderboardInfo ? leaderboardInfo.slice(0,3) : [];
-  let restData = leaderboardInfo ? leaderboardInfo.slice(3,dataLength) : [];
-  let data = leaderboardInfo;
+  let topData = data ? data.slice(0,3) : [];
+  let restData = data ? data.slice(3,dataLength) : [];
+  // let data = data;
 
   if (topData.length == 2)
     topData.push({
@@ -40,23 +41,23 @@ const OverAll = (talent,estReward,prev) => {
     });
 
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://www.streamkar.net/api/activity/eidF/getLeaderboardInfoV2?eventDesc=20240422_tile&rankIndex=12&pageNum=1&pageSize=20');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        console.log("data...???", data);
-        setLeaderboardInfo(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('https://www.streamkar.net/api/activity/eidF/getLeaderboardInfoV2?eventDesc=20240422_tile&rankIndex=12&pageNum=1&pageSize=20');
+  //       if (!response.ok) {
+  //         throw new Error('Network response was not ok');
+  //       }
+  //       const data = await response.json();
+  //       console.log("data...???", data);
+  //       setLeaderboardInfo(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []); // empty dependency array to run only once on component mount
+  //   fetchData();
+  // }, []); // empty dependency array to run only once on component mount
 
 
   return (
