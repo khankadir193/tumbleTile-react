@@ -1,6 +1,6 @@
 import React from "react";
-import gemIcon from "../../assests/gem.png";
-import beanIcon from "../../assests/bean.png";
+import gemIcon from "../images/Leaderboard/beans-icon.png";
+import beanIcon from "../images/Leaderboard/beans-icon.png";
 import { captureImageError, goTo } from "../UtilityFunction/helper.js";
 
 export default function RestRank({

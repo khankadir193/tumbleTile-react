@@ -1,5 +1,4 @@
-import unknown from "../assests/unknown.png";
-import { rewGet } from "./imageContext";
+// import unknown from "../assests/unknown.png";
 
 import { baseURL } from "./URL";
 
@@ -17,86 +16,10 @@ export const xtra = (input, count) => {
     }
 };
 export const captureImageError = (event) => {
-    event.target.src = unknown;
+    event.target.src = '';
     return true;
 };
-export const wheelGame = (min, max) => {
-    let randomNumber = Math.floor(Math.random() * (max - min) + min);
-    return {
-        errorCode: 0,
-        msg: "success",
-        data: {
-            firstLevel: randomNumber,
-            rewardList: [
-                {
-                    type: 1,
-                    count: 6000,
-                    desc: "Beans",
-                },
-                {
-                    type: 4,
-                    id: 1663,
-                    count: 12,
-                    desc: "Bumblebee Entrance",
-                },
-                {
-                    type: 4,
-                    id: 1664,
-                    count: 20,
-                    desc: "Phantom Entrance",
-                },
-                {
-                    type: 5,
-                    id: 112,
-                    count: 11,
-                    desc: "Ramadan Mubarak Room Skin",
-                },
-                {
-                    type: 5,
-                    id: 85,
-                    count: 13,
-                    desc: "FireBrand Room Skin",
-                },
-                {
-                    type: 5,
-                    id: 83,
-                    count: 7,
-                    desc: "Desert Knight Room Skin(New)",
-                },
-                {
-                    type: 6,
-                    id: 139,
-                    count: 7,
-                    desc: "Ignite Frame",
-                },
-                {
-                    type: 6,
-                    id: 31,
-                    count: 10,
-                    desc: "Ramadan Glory Frame",
-                },
-            ],
-            itemInfo: [
-                {
-                    index: 1,
-                    count: 25,
-                },
-                {
-                    index: 2,
-                    count: 28,
-                },
-                {
-                    index: 3,
-                    count: 39,
-                },
-                {
-                    index: 4,
-                    count: 7,
-                },
-            ],
-        },
-    };
-};
+
 export const drawGame = (min, max) => {
     let randomNumber = Math.floor(Math.random() * (max - min) + min);
     return {
@@ -169,24 +92,7 @@ export const blockInvalidChar = (e) => {
     }
 };
 
-export const checkShowData = (data, clas) => {
-    const nestdata = convertToNestedArray(data);
-    
-        return (
-            <span className={clas}>
-                {data?.map((d, i) => {
-                    return (
-                        <span key={i} className={`${clas}-data`}>
-                            <img src={rewGet(d.desc)} />
-                            <span className="color-primary">
-                                {d.desc} {xtra(d.desc, d.count)}
-                            </span>
-                        </span>
-                    );
-                })}
-            </span>
-        );
-};
+
 export function convertToNestedArray(arr) {
     let nestedArray = [];
     for (let i = 0; i < arr.length; i += 2) {

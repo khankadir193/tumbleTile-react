@@ -28,6 +28,7 @@
     bottom: 5.5rem;
     overflow: hidden;
     z-index: 1;
+    overflow: auto;
 }
 
 .guideCloseBtn{

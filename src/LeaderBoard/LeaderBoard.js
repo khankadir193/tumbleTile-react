@@ -42,6 +42,10 @@ const LeaderBoard = () => {
                 {selectedTab === 'daily' && <DailyComp />}
                 {selectedTab === 'overall' && <OverAllComp />}
             </div>
+
+            <div className='rest-board-container'>
+                {/* <Image src={selectedTab === 'overall' ? overAllSelected : overAllUnselected} alt="user-talent" /> */}
+            </div>
         </div>
     )
 }

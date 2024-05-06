@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
-import { UserContext } from "../../context/UserContext";
-
-import gemIcon from "../../assests/gem.png";
-import beanIcon from "../../assests/bean.png";
+import React from "react";
+import gemIcon from "../images/Leaderboard/beans-icon.png";
+import beanIcon from "../images/Leaderboard/beans-icon.png";
 import { captureImageError, goTo } from "../UtilityFunction/helper.js";
 
 export default function TopRank({
@@ -16,7 +14,6 @@ export default function TopRank({
   talent,
   estReward,
 }) {
-  const { changeDetailPopUp } = useContext(UserContext);
   return (
     <div className={`rank rank-${rank}`}>
       {userId > 0 && (
