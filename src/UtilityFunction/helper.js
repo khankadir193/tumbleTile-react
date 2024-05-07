@@ -1,6 +1,7 @@
 // import unknown from "../assests/unknown.png";
 
 import { baseURL } from "./URL";
+import defaultImage from '../images/Leaderboard/default.png';
 
 export const xtra = (input, count) => {
     if (input?.includes("bean bag") || input?.includes("Bean Bag")) {
@@ -16,7 +17,7 @@ export const xtra = (input, count) => {
     }
 };
 export const captureImageError = (event) => {
-    event.target.src = '';
+    event.target.src = defaultImage;
     return true;
 };
 

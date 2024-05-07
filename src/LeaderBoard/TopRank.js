@@ -2,7 +2,8 @@ import React from "react";
 import gemIcon from "../images/Leaderboard/beans-icon.png";
 import beanIcon from "../images/Leaderboard/beans-icon.png";
 import { captureImageError, goTo } from "../UtilityFunction/helper.js";
-import '../Style/OverAllComp.css';
+// import '../Style/OverAllComp.css';
+import './topRank.css';
 
 export default function TopRank({
   rank,
@@ -16,22 +17,49 @@ export default function TopRank({
   estReward,
 }) {
   return (
-    <div className={`rank rank-${rank}`}>
-      {userId > 0 && (
-        <div className="rank-frame">
-          <img className="rank-frame-image" src={frame} />
+    // <div className=`rank rank-${rank}`}>
+    //   {userId > 0 && (
+    //     <div className="rank-frame">
+    //       <img className="rank-frame-image" src={frame} />
+    //       <img
+    //         className="rank-frame-avatar"
+    //         onErrorCapture={captureImageError}
+    //         src={avatar}
+    //       />
+    //       <a
+    //         className="rank-frame-link"
+    //         onClick={() => goTo(0, userId, userId)}
+    //       ></a>
+    //     </div>
+    //   )}
+    //   {userId > 0 && (
+    //     <div className="rank-detail">
+    //       <span className="rank-detail-name">{name}</span>
+    //       <img className="rank-detail-lvl" src={level} />
+    //       {estReward && (
+    //         <span className="est">
+    //           <img src={beanIcon} />
+    //           {estReward}
+    //         </span>
+    //       )}
+    //       <span className="rank-detail-score">
+    //         <img src={talent ? gemIcon : beanIcon} />
+    //         {score}
+    //       </span>
+    //     </div>
+    //   )}
+    // </div>
+
+    <div className={`rank`}>
+        <div className="rank-profile-img">
+          <img className={`rank-frame-image rank-${rank}`} src={frame} />
           <img
             className="rank-frame-avatar"
             onErrorCapture={captureImageError}
             src={avatar}
           />
-          <a
-            className="rank-frame-link"
-            onClick={() => goTo(0, userId, userId)}
-          ></a>
         </div>
-      )}
-      {userId > 0 && (
+  
         <div className="rank-detail">
           <span className="rank-detail-name">{name}</span>
           <img className="rank-detail-lvl" src={level} />
@@ -46,7 +74,6 @@ export default function TopRank({
             {score}
           </span>
         </div>
-      )}
     </div>
   );
 }

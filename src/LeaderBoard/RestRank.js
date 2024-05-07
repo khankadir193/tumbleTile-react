@@ -15,7 +15,7 @@ export default function RestRank({
     estReward,
 }) {
     return (
-        <div className={`rest`}>
+        <div className="rest">
             <span className="rest-rank">{rank}</span>
             <div className="flex">
                 {" "}
@@ -40,7 +40,7 @@ export default function RestRank({
                 {estReward}
             </span>
             <span className="rest-score">
-                <img src={talent ? gemIcon : beanIcon} />
+                <img style={{width:'4vw'}} src={talent ? gemIcon : beanIcon} />
                 {score}
             </span>
         </div>

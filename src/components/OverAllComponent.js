@@ -1,8 +1,11 @@
 import React from 'react'
+import CarouselComp from '../crousel/CarouselComp'
 
 const OverAllComponent = () => {
   return (
-    <div>OverAllComponent</div>
+    <div>
+      <CarouselComp />
+    </div>
   )
 }
 

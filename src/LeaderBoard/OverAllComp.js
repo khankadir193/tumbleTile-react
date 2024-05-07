@@ -157,7 +157,103 @@ const OverAll = ({talent,estReward,prev,data}) => {
             <span className="flexCenter mrtop">No Record Found</span>
           )}
         </div>
-      </div>
+      </div> 
+      {/* <div className="leader-board">
+        {topData?.map(
+          (
+            {
+              actorLevel,
+              userLevel,
+              userId,
+              nickname,
+              userScore,
+              desc,
+              portrait,
+            },
+            i
+          ) => {
+            let rank = i + 1;
+            var totalBeans;
+            var text = prev ? "Won: " : "Est: ";
+
+            if (rank === 1) {
+              let cal = (estReward * 40) / 100;
+              totalBeans = text + parseInt(cal);
+            } else if (rank === 2) {
+              let cal = (estReward * 30) / 100;
+              totalBeans = text + parseInt(cal);
+            } else if (rank === 3) {
+              let cal = (estReward * 10) / 100;
+              totalBeans = text + parseInt(cal);
+            }
+            return (
+              <TopRank
+                talent={talent}
+                userId={userId}
+                level={getLevelUrl(talent, talent ? actorLevel : userLevel)}
+                name={nickname}
+                rank={rank}
+                avatar={portrait ? portrait : ''}
+                score={userScore}
+                estReward={estReward && totalBeans}
+                frame={
+                  rank === 1
+                    ? frameOne
+                    : rank === 2
+                      ? frameTwo
+                      : rank === 3
+                        ? frameThree
+                        : null
+                }
+              />
+            );
+          }
+        )}
+        <div className="rest-rankk fancyScroll">
+          {data.length > 0 ? (
+            restData?.map(
+              (
+                {
+                  actorLevel,
+                  userLevel,
+                  userId,
+                  nickname,
+                  userScore,
+                  desc,
+                  portrait,
+                },
+                i
+              ) => {
+                let rank = i + 4;
+
+                var totalBeans;
+                var text = prev ? "Won: " : "Est: ";
+                if (rank === 4) {
+                  let cal = (estReward * 10) / 100;
+                  totalBeans = text + parseInt(cal);
+                } else if (rank === 5) {
+                  let cal = (estReward * 10) / 100;
+                  totalBeans = text + parseInt(cal);
+                }
+                return (
+                  <RestRank
+                    userId={userId}
+                    level={getLevelUrl(talent, talent ? actorLevel : userLevel)}
+                    name={nickname}
+                    avatar={portrait ? portrait : ''}
+                    rank={rank}
+                    score={userScore}
+                    talent={talent}
+                    estReward={estReward && totalBeans}
+                  />
+                );
+              }
+            )
+          ) : (
+            <span className="flexCenter mrtop">No Record Found</span>
+          )}
+        </div>
+      </div> */}
       {data.length > 10 && (
         <img
           className="seemore-btn mt-150"
