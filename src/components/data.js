@@ -27,7 +27,16 @@ const data = [
         userId: 620132848,
         userLevel: 1,
         userScore: 17985000
-    }
+    },
+    // {
+    //     actorLevel: 15,
+    //     liveType: 1,
+    //     nickname: "kadir 609",
+    //     ranking: 4,
+    //     userId: 620132849,
+    //     userLevel: 1,
+    //     userScore: 179853434
+    // }
 ];
 
 export default data;

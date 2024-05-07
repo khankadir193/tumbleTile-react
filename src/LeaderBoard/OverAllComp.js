@@ -6,7 +6,7 @@ import seemorebtn from "../images/Leaderboard/see-more-btn.png";
 import seelessbtn from "../images/Leaderboard/see-less-btn.png";
 import TopRank from "./TopRank.js";
 import { getLevelUrl } from "../UtilityFunction/helper.js";
-import RestRank from "./RestRank";
+import RestRank from "./RestRank.js";
 import '../Style/OverAllComp.css';
 
 // import unknown from "../../assests/unknown.png";
