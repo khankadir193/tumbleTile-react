@@ -82,7 +82,7 @@
     width: 22.66667vw;
 }
 
-.leader-board .rank-2 {
+/* .leader-board .rank-2 {
     height: 37.46667vw;
     order: 0;
     width: 21.33333vw;
@@ -153,3 +153,34 @@
     margin-top: 1.33333vw;
     width: 24vw;
 }
+
+.maingame, .maingame .tiles {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.maingame .tiles {
+    height: 90.66667vw;
+    overflow: hidden;
+}
+
+.maingame .tiles-tile {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.maingame .tiles-tile-single {
+    display: flex;
+    position: relative;
+}
+
+.leaderboard-btn, .tile-pos {
+    height: 16vw;
+    position: absolute;
+    width: 16vw;
+}; */

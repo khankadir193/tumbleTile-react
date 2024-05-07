@@ -8,6 +8,11 @@ import rewardHistory from '../images/Header/reward-history-icon.gif';
 import titlePosition from '../images/Header/tile-Position-icon.png';
 import characterLeft from '../images/Header/charcter-left.gif';
 import characterRight from '../images/Header/charcter-right.gif';
+import frontPosition from '../images/Header/Front-position.gif';
+import chanceToPlay from '../images/Header/Chances-to-play.png';
+import manualToPlay from '../images/Header/manual-auto-slider-bg.png';
+import JumpButton from '../images/Header/Jump-button.gif';
+
 
 import Popup from './Popup';
 import TileComponent from './TileComponent';
@@ -57,6 +62,12 @@ const Header = () => {
       </div>
 
       <TileComponent />
+
+      <div className='chance-front-manual'>
+        <img src={chanceToPlay} alt="rewardHistory" className="chanceToPlay" />
+        <img src={frontPosition} alt="rewardHistory" />
+        <img src={manualToPlay} alt="rewardHistory" className="chanceToPlay"/>
+      </div>
 
     </div>
   );
