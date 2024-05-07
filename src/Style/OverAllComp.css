@@ -20,8 +20,8 @@
     align-self: flex-end;
     display: flex;
     flex-direction: column;
-    height: 40.53333vw;
-    margin-top: 1.33333vw;
+    height: 30.53333vw;
+    margin-top: -9.33333vw;
     width: 24vw;
 }
 
@@ -73,13 +73,43 @@
     display: flex;
     flex-direction: column;
     gap: .26667vw;
-    width: 20vw;
+    width:8vw;
 }
 
 .leader-board .rank-1 {
     height: 40vw;
     order: 1;
     width: 22.66667vw;
+}
+
+.leader-board .rank-3 {
+    height: 27.33333vw;
+    margin-right: 4vw;
+    order: 2;
+    width: 20vw;
+}
+
+.leader-board .rank-detail-score {
+    background: #0000007a;
+    border-radius: 13.2vw;
+    font-size: 1vw;
+    padding: 0 1.33333vw;
+}
+
+.leader-board .rank-detail-name {
+    display: block;
+    font-size: 2.4vw;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: pre;
+    width: 20vw;
+}
+
+.leader-board .rank-2 {
+    height: 28.46667vw;
+    order: 0;
+    width: 21.33333vw;
 }
 
 /* .leader-board .rank-2 {

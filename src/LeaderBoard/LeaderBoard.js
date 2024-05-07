@@ -11,6 +11,7 @@ import overAllSelected from '../images/Leaderboard/Overall-selected.png';
 import DailyComp from './DailyComp.js';
 import HourlyComp from './HourlyComp.js';
 import OverAllComp from './OverAllComp.js';
+import dataValue from '../components/data.js';
 
 
 
@@ -62,7 +63,7 @@ const LeaderBoard = () => {
             <div className="hourly-daily-overall-container">
                 {selectedTab === 'hourly' && <HourlyComp />}
                 {selectedTab === 'daily' && <DailyComp />}
-                {selectedTab === 'overall' && <OverAllComp talent={true} estReward="" prev="" data={data.list} />}
+                {selectedTab === 'overall' && <OverAllComp talent={true} estReward="" prev="" data={dataValue} />}
             </div>
 
             <div className='rest-board-container'>
