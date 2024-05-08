@@ -3,6 +3,7 @@ import gemIcon from "../images/Leaderboard/beans-icon.png";
 import beanIcon from "../images/Leaderboard/beans-icon.png";
 import { captureImageError, goTo } from "../UtilityFunction/helper.js";
 import '../Style/OverAllComp.css';
+import './topRank.css';
 
 export default function RestRank({
     talent,

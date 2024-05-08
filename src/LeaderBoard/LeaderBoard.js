@@ -63,7 +63,7 @@ const LeaderBoard = () => {
             <div className="hourly-daily-overall-container">
                 {selectedTab === 'hourly' && <HourlyComp />}
                 {selectedTab === 'daily' && <DailyComp />}
-                {selectedTab === 'overall' && <OverAllComp talent={true} estReward="" prev="" data={dataValue} />}
+                {selectedTab === 'overall' && <OverAllComp talent={true} estReward="" prev="" data={data.list} />}
             </div>
 
             <div className='rest-board-container'>
