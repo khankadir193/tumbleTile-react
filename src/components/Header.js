@@ -23,7 +23,7 @@ import TileComponent from './TileComponent';
 const Header = () => {
   const [showPopup, setShowPopup] = useState();
   const [popupContent, setPopupContent] = useState();
-  const [mode, setMode] = useState('auto');
+  const [mode, setMode] = useState('manual');
 
   const togglePopup = (event) => {
     console.log("event...poput...", event);
@@ -80,6 +80,8 @@ const Header = () => {
         <div className='front-position'>
           <img src={frontPosition} alt="rewardHistory" />
         </div>
+
+        {/* auto/manual button clickable */}
         <div className="chanceToPlay">
           <button className='auto-manual-btn' onClick={toggleMode}>
             {mode === 'auto' ? (
@@ -92,6 +94,10 @@ const Header = () => {
             <img src={manualToPlay} alt="Manual to Play" />
           </button>
         </div>
+
+        { mode === 'auto' && <div className='jump-btn'>
+            <img src={JumpButton} alt="Manual to Play" />
+        </div>}
 
       </div>
 

@@ -238,6 +238,14 @@ button {
     /* z-index: 4; */
 }
 
+.jump-btn{
+    width: 40%;
+    position: absolute;
+    top: 6rem;
+    margin: 0 auto;
+    left: 5rem;
+}
+
 
 /* .chance-front-manual Image{
     width: 100%;
