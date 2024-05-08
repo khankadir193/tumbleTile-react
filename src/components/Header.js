@@ -12,6 +12,9 @@ import frontPosition from '../images/Header/Front-position.gif';
 import chanceToPlay from '../images/Header/Chances-to-play.png';
 import manualToPlay from '../images/Header/manual-auto-slider-bg.png';
 import JumpButton from '../images/Header/Jump-button.gif';
+import Auto from '../images/Header/Auto-button.png';
+import Manual from '../images/Header/Manual-button.png';
+
 
 
 import Popup from './Popup';
@@ -20,6 +23,7 @@ import TileComponent from './TileComponent';
 const Header = () => {
   const [showPopup, setShowPopup] = useState();
   const [popupContent, setPopupContent] = useState();
+  const [mode, setMode] = useState('auto');
 
   const togglePopup = (event) => {
     console.log("event...poput...", event);
@@ -30,6 +34,12 @@ const Header = () => {
     }
     setShowPopup(!showPopup);
   }
+
+  const toggleMode = () => {
+    // Toggle between 'auto' and 'manual'
+    setMode(mode === 'auto' ? 'manual' : 'auto');
+  };
+
 
 
   return (
@@ -65,14 +75,24 @@ const Header = () => {
 
       <div className='chance-front-manual'>
         <div className="chanceToPlay">
-          <img src={chanceToPlay} alt="rewardHistory"  />
+          <img src={chanceToPlay} alt="rewardHistory" />
         </div>
         <div className='front-position'>
           <img src={frontPosition} alt="rewardHistory" />
         </div>
         <div className="chanceToPlay">
-          <img src={manualToPlay} alt="rewardHistory" />
+          <button className='auto-manual-btn' onClick={toggleMode}>
+            {mode === 'auto' ? (
+              <img src={Auto} alt="Auto" className='autoImg' />
+            ) : (
+              <img src={Manual} alt="Manual" className='manualImg' />
+            )}
+          </button>
+          <button>
+            <img src={manualToPlay} alt="Manual to Play" />
+          </button>
         </div>
+
       </div>
 
     </div>

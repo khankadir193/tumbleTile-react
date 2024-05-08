@@ -205,6 +205,39 @@ button {
     /* Max height of 200px */
 }
 
+.autoImg, .manualImg{
+    width: 85% !important;
+    height: 4vh !important; 
+    height: 6vh !important;
+    position: relative;
+    top: .5rem;
+    left: -1.5rem;
+}
+
+.autoImg{
+    width: 85% !important;
+    height: 4vh !important; 
+    height: 6vh !important;
+    position: relative;
+    top: .5rem;
+    left: 1.5rem;
+}
+
+/* .manualImg{
+    width: 60% !important;
+    height: 4vh !important;
+}
+ */
+.auto-manual-btn{
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    top: 2rem;
+    /* top: 1vw; */
+    /* z-index: 4; */
+}
+
 
 /* .chance-front-manual Image{
     width: 100%;
