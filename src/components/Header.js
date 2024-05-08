@@ -64,9 +64,15 @@ const Header = () => {
       <TileComponent />
 
       <div className='chance-front-manual'>
-        <img src={chanceToPlay} alt="rewardHistory" className="chanceToPlay" />
-        <img src={frontPosition} alt="rewardHistory" />
-        <img src={manualToPlay} alt="rewardHistory" className="chanceToPlay"/>
+        <div className="chanceToPlay">
+          <img src={chanceToPlay} alt="rewardHistory"  />
+        </div>
+        <div className='front-position'>
+          <img src={frontPosition} alt="rewardHistory" />
+        </div>
+        <div className="chanceToPlay">
+          <img src={manualToPlay} alt="rewardHistory" />
+        </div>
       </div>
 
     </div>

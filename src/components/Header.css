@@ -155,7 +155,7 @@ button {
     border: none;
 }
 
-.chance-front-manual {
+/* .chance-front-manual {
     display: flex;
     gap: 6vw;
     width: 30%;
@@ -165,10 +165,46 @@ button {
 }
 
 .chanceToPlay {
-    height: 12vh;
+    height: 8vh;
     position: relative;
     top: 3rem;
 }
+
+.front-position {
+    width: 50%;
+    height: 20vh;
+} */
+
+
+.chance-front-manual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Adjust container width if needed */
+    width: 100%;
+    position: relative;
+    top: -8rem;
+}
+
+.chanceToPlay,
+.front-position {
+    flex: 1;
+    text-align: center;
+}
+
+.chanceToPlay img,
+.front-position img {
+    /* Set width and height */
+    width: 100%;
+    /* This ensures that the image takes up the full width of its container */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    max-width: 200px;
+    /* Max width of 200px */
+    max-height: 200px;
+    /* Max height of 200px */
+}
+
 
 /* .chance-front-manual Image{
     width: 100%;
