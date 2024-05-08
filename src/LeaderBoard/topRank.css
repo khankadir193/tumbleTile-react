@@ -25,7 +25,8 @@
     border-radius: 50%;
 }
 .rank-detail{
-
+    position: relative;
+    top: -2rem;
 }
 .rank-detail-name{
 

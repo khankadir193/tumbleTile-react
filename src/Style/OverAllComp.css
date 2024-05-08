@@ -124,7 +124,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 10% 32% 30% 19%;
-    margin-top: 13vw;
+    margin-top: -10vw;
     z-index: 1;
     justify-items: center;
     font-size: 4vw;
