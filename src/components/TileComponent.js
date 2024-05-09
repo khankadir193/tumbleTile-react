@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Header.css'
 import Image from './Image';
 import firstTileLeft from '../images/Header/Unselected/1-left.png';
@@ -17,12 +17,33 @@ import sevenTileLeft from '../images/Header/Unselected/7-left.png';
 import sevenTileRight from '../images/Header/Unselected/7-right.png';
 import eightTileLeft from '../images/Header/Unselected/8-left.png';
 import eightTileRight from '../images/Header/Unselected/8-right.png';
+// import GameLogic from '../GameComponent/GameLogic';
 
 const TileComponent = () => {
+    const imageRef = useRef(null);
+
+    const calculateTilePosition = ()=>{
+        console.log('calculateTilePosition:::',calculateTilePosition);
+        const imageElement = imageRef.current;
+        //check if image has been loaded.
+        if(imageElement.complete){
+            const {width, height, x, y} = imageElement.getBoundingClientRect();
+        }else{
+            imageElement.onload = ()=>{
+                const {width, height, x, y} = imageElement.getBoundingClientRect();
+               console('width..',width);
+               console('height..',height);
+               console('xxxx..',x);
+               console('yyyyy..',y);
+                // calculateWidth
+            }
+        }
+    }
+
     return (
         <div className='tile-container'>
             <div className='first-tile'>
-                <button>
+                <button onClick={calculateTilePosition}>
                     <Image src={firstTileLeft} alt="firstTile" />
                 </button>
 
