@@ -1,6 +1,7 @@
 import React from "react";
 import { tiles } from "../raw/users/rewards";
 import Tiles from "./Tiles";
+import calculateWidthAndHeight from "./calculateWidthHeightComponent";
 
 export default function GameLogic({
   position,
@@ -13,25 +14,26 @@ export default function GameLogic({
   gear,
   loc
 }) {
-  const calculateWidthAndHeight = (index, ct, initialWidth, initialHeight) => {
-    // Calculate the distance from the current tile to the object
-    let distanceToCurrentTile = Math.abs(index - ct + 0.8);
-    if (distanceToCurrentTile > 25 / 2) {
-      distanceToCurrentTile = 25 - distanceToCurrentTile;
-    }
-    // Calculate the scale factor based on the distances
-    const scaleFactor = 1 - 0.1 * Math.min(distanceToCurrentTile, 7.5);
+  // const calculateWidthAndHeight = (index, ct, initialWidth, initialHeight) => {
+  //   // Calculate the distance from the current tile to the object
+  //   let distanceToCurrentTile = Math.abs(index - ct + 0.8);
+  //   if (distanceToCurrentTile > 25 / 2) {
+  //     distanceToCurrentTile = 25 - distanceToCurrentTile;
+  //   }
+  //   // Calculate the scale factor based on the distances
+  //   const scaleFactor = 1 - 0.1 * Math.min(distanceToCurrentTile, 7.5);
 
-    // Calculate the width and height for the object based on the scale factor
-    const width = initialWidth * scaleFactor;
-    const height = initialHeight * scaleFactor;
+  //   // Calculate the width and height for the object based on the scale factor
+  //   const width = initialWidth * scaleFactor;
+  //   const height = initialHeight * scaleFactor;
 
-    if (ct === index) {
-      return { width: 58, height: 22 };
-    } else {
-      return { width, height, finwidth: width, finheight: height };
-    }
-  };
+  //   if (ct === index) {
+  //     return { width: 58, height: 22 };
+  //   } else {
+  //     return { width, height, finwidth: width, finheight: height };
+  //   }
+  // };
+
 
   const startIndex = currentTile === 0 ? 0 : currentTile - 1;
   const newArray = Array.from(
@@ -76,4 +78,5 @@ export default function GameLogic({
       />
     </div>
   );
+
 }

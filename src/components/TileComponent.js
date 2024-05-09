@@ -18,6 +18,7 @@ import sevenTileRight from '../images/Header/Unselected/7-right.png';
 import eightTileLeft from '../images/Header/Unselected/8-left.png';
 import eightTileRight from '../images/Header/Unselected/8-right.png';
 // import GameLogic from '../GameComponent/GameLogic';
+import calculateWidthAndHeight from '../GameComponent/calculateWidthHeightComponent';
 
 const TileComponent = () => {
     const imageRef = useRef(null);
@@ -28,19 +29,10 @@ const TileComponent = () => {
         //check if image has been loaded.
         if(imageElement?.complete){
             const {width, height,top , left,bottom ,  right} = imageElement.getBoundingClientRect();
-               console.log('top..',top);
-               console.log('left..',left);
-               console.log('bottom',bottom);
-               console.log('right',right);
-            //    console.log('yyyyy111..',y1);
-            //    console.log('xxxxxx1111..',x1);
+            calculateWidthAndHeight(0, top, left, width, height);
         }else{
             imageElement.onload = ()=>{
                const {width, height, x, y} = imageElement.getBoundingClientRect();
-               console.log('width..',width);
-               console.log('height..',height);
-               console.log('xxxx..',x);
-               console.log('yyyyy..',y);
                 // calculateWidth
             }
         }
