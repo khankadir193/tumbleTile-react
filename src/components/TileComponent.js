@@ -26,15 +26,21 @@ const TileComponent = () => {
         console.log('calculateTilePosition:::',calculateTilePosition);
         const imageElement = imageRef.current;
         //check if image has been loaded.
-        if(imageElement.complete){
-            const {width, height, x, y} = imageElement.getBoundingClientRect();
+        if(imageElement?.complete){
+            const {width, height,top , left,bottom ,  right} = imageElement.getBoundingClientRect();
+               console.log('top..',top);
+               console.log('left..',left);
+               console.log('bottom',bottom);
+               console.log('right',right);
+            //    console.log('yyyyy111..',y1);
+            //    console.log('xxxxxx1111..',x1);
         }else{
             imageElement.onload = ()=>{
-                const {width, height, x, y} = imageElement.getBoundingClientRect();
-               console('width..',width);
-               console('height..',height);
-               console('xxxx..',x);
-               console('yyyyy..',y);
+               const {width, height, x, y} = imageElement.getBoundingClientRect();
+               console.log('width..',width);
+               console.log('height..',height);
+               console.log('xxxx..',x);
+               console.log('yyyyy..',y);
                 // calculateWidth
             }
         }
@@ -44,10 +50,10 @@ const TileComponent = () => {
         <div className='tile-container'>
             <div className='first-tile'>
                 <button onClick={calculateTilePosition}>
-                    <Image src={firstTileLeft} alt="firstTile" />
+                    <img src={firstTileLeft} alt="firstTile" ref={imageRef} />
                 </button>
 
-                <button>
+                <button onClick={calculateTilePosition}>
                     <Image src={firstTileRight} alt="secondTile" />
                 </button>
             </div>
@@ -122,7 +128,7 @@ const TileComponent = () => {
             </div>
 
         </div>
-    )
+    );
 }
 
 export default TileComponent

@@ -73,16 +73,16 @@ const Header = () => {
 
       <TileComponent />
 
-      <div className='chance-front-manual'>
-        <div className="chanceToPlay">
+      {/* <div className='chance-front-manual'> */}
+        {/* <div className="chanceToPlay">
           <img src={chanceToPlay} alt="rewardHistory" />
         </div>
         <div className='front-position'>
           <img src={frontPosition} alt="rewardHistory" />
-        </div>
+        </div> */}
 
         {/* auto/manual button clickable */}
-        <div className="chanceToPlay">
+        {/* <div className="chanceToPlay">
           <button className='auto-manual-btn' onClick={toggleMode}>
             {mode === 'auto' ? (
               <img src={Auto} alt="Auto" className='autoImg' />
@@ -93,13 +93,13 @@ const Header = () => {
           <button>
             <img src={manualToPlay} alt="Manual to Play" />
           </button>
-        </div>
+        </div> */}
 
-        { mode === 'auto' && <div className='jump-btn'>
+        {/* { mode === 'auto' && <div className='jump-btn'>
             <img src={JumpButton} alt="Manual to Play" />
-        </div>}
+        </div>} */}
 
-      </div>
+      {/* </div> */}
 
     </div>
   );
